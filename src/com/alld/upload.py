@@ -14,10 +14,6 @@ import mimetypes
 import getpass
 import sys
 
-client = gdata.docs.client.DocsClient(source='alld-docsync-v1')
-client.ssl = True
-client.http_client.debug = False
-
 def Login():
     email = raw_input("Email:")
     password = getpass.getpass()
